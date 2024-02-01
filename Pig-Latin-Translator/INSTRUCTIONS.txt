@@ -1,0 +1,67 @@
+PigLatin Program
+Program Specifications
+Modify PigLatin.java.
+
+Write a program that translates words from English to Pig Latin. Prompt for an English word and output the translation in Pig Latin.
+
+If the word has no vowel, print "**** INVALID ****". Repeat this sequence until the user wants to quit. Implement the rules below.
+
+NOTE: YOU MAY NOT USE REGULAR EXPRESSIONS IN YOUR SOLUTION
+
+Part 1
+Basic Rules
+Pig Latin is a pretend language. The basic rule is simple: move the leading consonants to the end of the word and append "ay"
+
+pig -> igpay
+latin -> atinlay
+this -> isthay
+strange -> angestray
+bcdfgh -> **** INVALID ****
+If the first letter is a vowel then just append "way".
+
+apple -> appleway
+eye -> eyeway
+Special Cases
+If the first vowel is a "u" and the letter before it is a "q" then the "u" also goes to the end of the word.
+
+question -> estionquay
+squeeze -> eezesquay
+Treat "y" as a consonant if it's the first letter of a word; otherwise, treat "y" as a vowel if it appears earlier than any other vowel.
+
+yes -> esyay
+rhyme -> ymerhay
+try -> ytray
+Capitalization and Punctuation
+If the first letter is capitalized in English then the first letter should be capitalized in Pig Latin also. Capital letters in the middle of the word are ignored and remain capitalized.
+
+Thomas -> Omasthay
+Jefferson -> Effersonjay
+McDonald -> OnaldmcDay
+McArthur -> Arthurmcay
+hasCapital -> asCapitalhay
+HELLO -> ELLOhay
+If before and after punctuation is used in English, then it should remain in Pig Latin. Apostrophes are ignored and remain where they were.
+
+What? -> Atwhay?
+Oh! -> Ohway!
+"hello" -> "ellohay"
+"Hello!!!!" -> "Ellohay!!!!"
+don't -> on'tday
+Part 2
+Note: most of part 2 is completed for you - all you need to do is use try-catch blocks for reading in the file name
+
+Modify your program to prompt the user for the name of an input text file (for example, “PigLatin.txt”) to read from. Write the output to a text file named “output.txt”. Translate all the words in that file from English to Pig Latin, then output the words into the new text file.
+
+Use one Scanner object to read in the filename. Use another Scanner to actually read the file. Use try-catch blocks in a loop (while or do-while) to catch the exception. Look it up if you don't know the syntax.
+
+Preserve the line structure as you pig-latinize each line. There are several ways to do this, but they all use nested loops. You may want to look at nextLine, next, split, or StringTokenizer (the program already uses split). Your code should work for any file. That is, there may or may not be blank lines, so you should test for them.
+
+Use these files for testing:
+
+PigLatin.txt
+
+PigLatin2.txt
+
+LittleFrog.txt
+
+declaration.txt
