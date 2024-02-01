@@ -1,0 +1,3 @@
+[Main Character, REPEAT] ate a [Food].
+[Main Character, REPEAT] was very [Emotion].
+[Main Character, REPEAT] visited the [Place] and saw [Number] [Noun]s.
