@@ -1,0 +1,58 @@
+BaseConversion Program
+Background
+One algorithm for converting a base 10 number to base b involves repeated division by the base b. Initially one divides the number by b. The remainder from this division is the units digit (the rightmost digit) in the base b representation of the number (it is the part of the number that contains no powers of b). The quotient is then divided by b on the next iteration. The remainder from this division gives the next base b digit from the right. The quotient from this division is used in the next iteration. The algorithm stops when the quotient is 0. Note that at each iteration the remainder from the division is the next base b digit from the right—that is, this algorithm finds the digits for the base b number in reverse order.
+
+Here is an example for converting 30 to base 4:
+
+quotient	remainder
+30 / 4 =	7	2
+7 / 4 =	1	3
+1 / 4 =	0	1
+The answer is read bottom to top in the remainder column. So
+30 (base 10) = 132 (base 4).
+
+Think about how this is recursive in nature: If you want to convert x (30 in our example) to base b (4 in our example), the rightmost digit is the remainder x % b. To get the rest of the digits, you perform the same process on what is left; that is, you convert the quotient x / b to base b. If x / b is 0, there is no rest; x is a single base b digit and that digit is x % b (which also is just x).
+
+The file BaseConversion.java contains the shell of a method convert to do the base conversion and a main method to test the conversion. The convert method returns a string representing the base b number. Once you calculate the remainder that should be returned, it must be converted to a String object. This is done by concatenating the remainder with an empty string.
+
+To Do
+Complete the method convert() by providing a recursive solution. You must write a recursive solution.
+Currently the main method asks the user for the number and the base and reads these in. Add a statement to print the string returned by convert() (appropriately labeled)
+Currently the program doesn't print the correct digits for bases greater than 10. Remember, when you go above base 10, the digits are alphabetic. For example; 10 == “A”, 11 == “B”, and so on… Fix the program so it supports up to base 16 (Hexadecimal). Fill out digitToString( int iVal ) and convert the remainder to a hexadecimal value. Remember to include a call to this method in convert().
+Sample Output
+Base Conversion Program
+Enter an integer: 89
+Enter the base: 2
+Integer [89] in base [2] = [1011001]
+
+Base Conversion Program
+Enter an integer: 347
+Enter the base: 5
+Integer [347] in base [5] = [2342]
+
+Base Conversion Program
+Enter an integer: 3289
+Enter the base: 8
+Integer [3289] in base [8] = [6331]
+
+Base Conversion Program
+Enter an integer: 59726
+Enter the base: 16
+Integer [59726] in base [16] = [E94E]
+
+Base Conversion Program
+Enter an integer: 123456
+Enter the base: 12
+Integer [123456] in base [12] = [5B540]
+
+Extension (if you have time)
+Write a method to convert other bases to decimal. You may choose to write this recursively or with iteration.
+
+Program Expectations
+All requirements have been met
+Has good formatting.
+Comment at top with name, date, description.
+Correct indentation and extra lines for readability
+Consistent placement of { }
+Comment above every method, except main.
+Comments throughout code to improve readability
