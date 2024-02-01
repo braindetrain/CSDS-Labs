@@ -1,0 +1,39 @@
+Password Lab
+Program Specifications
+Write a program that prompts a user to create a new password. A valid password:
+must be at least 8 characters
+contains at least one upper and one lowercase letter
+contains at least one number
+contains at least one special character (any non--alphabetic, non-numeric character)
+cannot contain spaces
+Once the first password is valid, the program prompts the user to re-enter the password a 2nd time
+If the second password does not match the first, the program gives the user two more tries to submit a matching password.
+After 3 incorrect second passwords, the whole process starts over from the beginning.
+If the password is valid and both match, display a success message.
+NOTE: YOU MAY NOT USE REGULAR EXPRESSIONS IN YOUR SOLUTION
+
+Password Program Planning
+Spend time designing your program. Use a flowchart or pseudocode to consider all the possible branches. Ask yourself:
+
+Where will I need loops? Conditionals?
+
+Should I incorporate an object into my solution?
+
+What processes can be put into methods to manage program complexity and readability?
+
+Is there a way to make my code more efficient?
+
+What are some good test cases to test my code?
+
+Password Program Expectations
+All requirements in the specifications have been met
+
+Uses object-oriented code OR uses at least one additional method besides main.
+
+Has good formatting.
+
+Comment at top with name, date, description.
+Correct indentation and extra lines for readability
+Consistent placement of { }
+Comment above every method, except main.
+Comments throughout code to improve readability
