@@ -1,0 +1,36 @@
+VigenereCipher Program
+Program Specifications
+Design and implement a program that encrypts messages using Vigenère’s cipher.
+Your program must accept a keyword (k) composed entirely of alphabetical characters.
+If your program is executed with a keyword that contains any non-alphabetical character, your program should prompt for another keyword.
+Otherwise, your program must proceed to prompt the user for a string, p, which it must then encrypt according to Vigenère’s cipher with k, ultimately printing the result and exiting. (Use nextLine() instead of next() to read in the entire message, including blank spaces.)
+With respect to the characters in k, you must treat A and a as 0, B and b as 1, … , and Z and z as 25.
+Your program must only apply Vigenère’s cipher to a character in p if that character is a letter. All other characters (numbers, symbols, spaces, punctuation marks, etc.) must be outputted unchanged. Moreover, if your code is about to apply the jth character of k to the ith character of p, but the latter proves to be a non-alphabetical character, you must wait to apply that jth character of k to the next alphabetical character in p; you must not yet advance to the next character in k.
+Your program must preserve the case of each letter in p.
+VigenereCipher Program Planning
+You do not need to turn in this for the VigenereCipher lab
+
+Spend time designing your program. Use a flowchart or pseudocode to consider all the possible branches. Ask yourself:
+
+Where will I need loops? Conditionals?
+
+Should I incorporate an object into my solution?
+
+What processes can be put into methods to manage program complexity and readability?
+
+Is there a way to make my code more efficient?
+
+What are some good test cases to test my code?
+
+VigenereCipher Program Expectations
+Evidence of planning - flowchart or pseudocode does not have to be submitted, but should be developed
+
+All requirements in the specifications have been met
+
+Has good formatting.
+
+Comment at top with name, date, description.
+Correct indentation and extra lines for readability
+Consistent placement of { }
+Comment above every method, except main.
+Comments throughout code to improve readability
