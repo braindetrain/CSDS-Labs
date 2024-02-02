@@ -1,0 +1,3 @@
+IteratorLab
+To Do
+Complete the IteratorLab shell, using either for-each loops or iterators, not regular for-loops (you must use at least two of each in your program). Notice Lines 12-13, where they made the for-each loop backwards compatible with primitives. The replaceNeg method on Line 18 replaces all negative numbers with 0.
