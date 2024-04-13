@@ -5,8 +5,6 @@ Welcome to my CS Data Structures repository! This collection showcases projects 
 ## Table of Contents
 - [Course Content](#course-content)
 - [Technologies Used](#technologies-used)
-- [Projects](#projects)
-- [Contributing](#contributing)
 
 ## Course Content
 - **Unit 1:** Strings Review
